@@ -1,0 +1,73 @@
+:root {
+  --ball-width: 20px;
+  --ball-border-radius: 0px;
+  --playground-bg: black;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#playground {
+  background: var(--playground-bg);
+  width: 400px;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.score {
+  font-size: 1.5em;
+  margin-bottom: 1%;
+}
+
+#ball {
+  background: white;
+  position: absolute;
+  width: var(--ball-width);
+  height: 20px;
+  left: 190px;
+  top: 390px;
+  border-radius: var(--ball-border-radius);
+}
+
+#racketP1 {
+  background: white;
+  left: 140px;
+  top: 760px;
+  position: absolute;
+  width: 120px;
+  height: 20px;
+}
+
+#racketP2 {
+  background: white;
+  left: 140px;
+  top: 20px;
+  position: absolute;
+  width: 120px;
+  height: 20px;
+}
+
+#start-message,
+#game-over {
+  color: white;
+  font-family: "Courier New";
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  text-align: center;
+}
+
+#win-player {
+  color: white;
+  font-family: "Courier New";
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  text-align: center;
+}
+
+#game-over {
+  display: none;
+}
